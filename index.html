@@ -1,0 +1,90 @@
+ 
+<html>
+    <head>
+      <title>Emoción a emoticon</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+
+      <!--Agrega etiqueta h3 para el encabezado-->
+      <center>
+      <h1 class="heading">Identificador de emociones</h1>
+    </center>
+<br>
+<br>
+<br>
+
+    <div class="container">
+      <center>
+        <!--Div para ver la cámara-->
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label> Vista previa de la camara</label>
+          <div id="camera-container" style="border-radius: 100%;">
+            <div id="camera"></div>
+        </div>
+          <br><br>
+          <button onclick="take_snapshot();" class="btn btn-success"> Capturar imagen </button>
+        </div>
+
+        <div class="col-md-4 col-ms-12 col-xs-12">
+          <center>
+              <p style="font-size: 22px;">Toma tu foto para generar un emoji
+                  <br>  
+                <b style="color: yellow">bien?</b>
+                <br>
+                <b style="color: black">Vicroria</b>
+                <br>
+                <b style="color: red">Genial</b>
+                <br>
+              </p>
+
+              
+        <br>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>✌️</span>
+        <br>
+
+        
+        <!--Div para ver las predicciones--> 
+        <div class="col-md-4 col-ms-12 col-xs-12">
+          <label>Prediccion 1</label>
+          <p class="emoticon_name" id="result_emotion_name"></p>
+          <p class="emoji" id="update_emoji"></p>
+          
+          <label>Prediccion 2</label>
+          <p class="emoticon_name" id="result_emotion_name2"></p>
+          <p class="emoji" id="update_emoji2"></p>
+        </div>
+
+            </center>
+          </div>
+
+  
+        <!--Div para ver el resultado-->  
+        <div class="col-md-4 col-ms-12 col-xs-12">
+          <label> Instantanea </label>
+          <br>
+          <div id="result"></div>
+          <br>
+          <button onclick="check();"> Predecir Emocion </button>
+ 
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>

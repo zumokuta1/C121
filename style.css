@@ -1,0 +1,31 @@
+body
+{
+  color: #000;
+  background-color: #ffffff;
+}
+span
+{
+  font-size: 30px;
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+
+.heading{
+  font-size: 7rem;
+  border-radius: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+label{
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 2rem
+}
